@@ -7,15 +7,16 @@ import { authenticate } from 'slices/app.slice'
 import DrawerNavigator from './Drawer'
 
 const Navigator = () => {
-  const { checked, loggedIn } = useSelector((state) => state.app)
+  const { checked, loggedIn, token } = useSelector((state) => state.app)
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch(authenticate({ loggedIn: true, checked: true }))
+    dispatch(authenticate({ loggedIn: true, checked: true, token: 'adaajjajjajauuu' }))
   }, [])
 
   // TODO: switch router by loggedIn state
   console.log('[##] loggedIn', loggedIn)
+  console.log('[##] token', token)
 
   return checked ? (
     <NavigationContainer>

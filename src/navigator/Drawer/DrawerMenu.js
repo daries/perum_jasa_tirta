@@ -38,7 +38,7 @@ const DrawerMenu = ({ navigation }) => (
       />
     </View>
     <View style={styles.main}>
-      <Text>Drawer Menu</Text>
+      <Text>Menu</Text>
     </View>
   </SafeAreaView>
 )

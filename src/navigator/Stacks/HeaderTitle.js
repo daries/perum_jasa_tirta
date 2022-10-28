@@ -1,15 +1,31 @@
 import React from 'react'
-import { StyleSheet, Image } from 'react-native'
-import { images } from 'theme'
+import {
+  StyleSheet,
+  Text,
+} from 'react-native'
+// import { images } from 'theme'
 
 const styles = StyleSheet.create({
-  logo: {
-    width: 32,
-    height: 32,
+  baseText: {
+    fontFamily: 'Cochin',
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  titleText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: 'white',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  judul: {
+    alignItems: 'center',
+    justifyContent: 'center',
+
   },
 })
 
-const HeaderTitle = () => <Image source={images.logo_sm} style={styles.logo} />
+const HeaderTitle = () => (<Text style={styles.titleText}>SIAP</Text>)
 
 HeaderTitle.propTypes = {}
 HeaderTitle.defaultProps = {}

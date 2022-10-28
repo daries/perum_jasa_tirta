@@ -25,7 +25,16 @@ const Home = ({ navigation }) => (
     <StatusBar barStyle="light-content" />
     <Text style={styles.title}>Home</Text>
     <Button
-      title="Go to Details"
+      title="Formulir JSA"
+      color="white"
+      backgroundColor={colors.lightPurple}
+      onPress={() => {
+        navigation.navigate('Details', { from: 'Home' })
+      }}
+    />
+    <Text> </Text>
+    <Button
+      title="Formulir IZIN"
       color="white"
       backgroundColor={colors.lightPurple}
       onPress={() => {

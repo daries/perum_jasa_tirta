@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "react-native-boilerplate",
-    "slug": "react-native-boilerplate",
+    "name": "SIAP",
+    "slug": "perum-jasa-tirta-siap",
     "privacy": "public",
     "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
